@@ -4,30 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio 1</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="container1">
         <div>
-            <a href="#">LOGO</a>
+            <a href="index.html" id="logo">LOGO</a>
           </div>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Portifolio</a></li>
-            <li><a href="#">News</a></li>
-          </ul>
-          <div>
-            <a href="#">Contact Us</a>
+          <div class="menu-container">
+            <ul class="menu">
+                <li class="menu-items"><a href="#">Home</a></li>
+                <li class="menu-items"><a href="#">About Us</a></li>
+                <li class="menu-items"><a href="#">Portifolio</a></li>
+                <li class="menu-items"><a href="#">News</a></li>
+              </ul>
+              <div>
+                <button id="menu-btn">Contact Us</button>
+              </div>
           </div>
     </header>
     <div class="container2">
-        <div>
-            <p>Proved By prodesigner</p>
-            <h1>Work that we produce for our clients</h1>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.</p>
-            <button>Get more details</button>
+        <div class="container-content">
+            <h4 id="text-pro">Proved By prodesigner</h4>
+            <h1 id="title2">Work that we produce for our clients</h1>
+            <p id="text2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.</p>
+            <button id="btn2">Get more details</button>
         </div>
-        <div>
+        <div class="container2-images">
             <div>
                 <img src="images/cry.png" alt="">
                 <img src="images/unreal.png" alt="" srcset="">
@@ -39,32 +42,32 @@
         </div>
     </div>
     <div class="container3">
-        <div>
-            <h2>Currently Trending Games</h2>
-            <button>SEE ALL</button>
+        <div class="container-top">
+            <h2 id="title3">Currently Trending Games</h2>
+            <button id="btn3">SEE ALL</button>
         </div>
-        <div>
+        <div class="container3-images">
             <img src="images/game1.png" alt="" srcset="">
             <img src="images/game2.png" alt="" srcset="">
             <img src="images/game3.png" alt="" srcset="">
             <img src="images/game4.png" alt="" srcset="">
         </div>
-        <div>
-            <div>
+        <div class="container-bottom">
+            <div class="item3">
                 <span>fire</span>
-                <p>40 followers</p>
+                <p class="text3">40 followers</p>
             </div>
-            <div>
+            <div class="item3">
                 <span>fire</span>
-                <p>40 followers</p>
+                <p class="text3">40 followers</p>
             </div>
-            <div>
+            <div class="item3">
                 <span>fire</span>
-                <p>40 followers</p>
+                <p class="text3">40 followers</p>
             </div>
-            <div>
+            <div class="item3">
                 <span>fire</span>
-                <p>40 followers</p>
+                <p class="text3">40 followers</p>
             </div>
         </div>
     </div>
@@ -72,9 +75,9 @@
         <h1>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h1>
     </div>
     <div class="container5">
-        <div>
+        <div class="container5-content">
             <h2>Lorem Ipsum</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+            <p id="text5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
         </div>
         <img src="images/miles.png" alt="" srcset="">
     </div>
@@ -87,9 +90,9 @@
         <div></div>
     </div>
     <div class="container7">
-        <div>
-            <h2>Our Recents Projects</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        <div class="container7-content">
+            <h2 id="title7">Our Recents Projects</h2>
+            <p id="text7">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
         </div>
         <div>
             <img src="images/project1.png" alt="" srcset="">
@@ -146,5 +149,6 @@
             <p>Copyright ® 2022 prodesigner All rights Rcerved</p>
         </div>
     </footer>
+    <script src="app.js"></script>
 </body>
 </html>
