@@ -275,7 +275,8 @@ body{
     width: 100%;
 }
 
-.group-content input{
+.group-content input,
+.group-content textarea{
     width: 100%;
     padding: 10px 20px;
     border: 1px solid rgba(206, 206, 206, 1);
