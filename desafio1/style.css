@@ -90,8 +90,6 @@ body{
     position: relative;
 }
 
-
-
 #text-pro{
     font-size: 20px;
     color: rgba(232, 125, 14, 1);
@@ -274,7 +272,95 @@ body{
 }
 
 /* container 6 */
+.container6{
+    width: 100%;
+    min-height: 120vh;
+    background-image: url(images/bg-image.png);
+}
 
+.container6-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 60px;
+    padding: 20px;
+}
+
+.container6-text{
+    text-align: center;
+    margin: 50px 0;
+}
+
+.container6-text h2{
+    margin: auto;
+    margin-bottom: 30px;
+    width: 55%;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.container6-text p{
+    font-size: 15px;
+    width: 70%;
+    margin: auto;
+}
+
+.container6-images{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.c6-row{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.c6-group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 100px;
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.c6-group p{
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+.c6-group img {
+    margin-bottom: 20px; 
+    border-radius: 1px;
+    transition: all 0.3s ease;
+}
+
+.c6-group:hover img {
+    filter: drop-shadow(0 0 10px rgba(142, 194, 245, 0.6));
+}
+
+.c6-group i {
+    margin-top: 15px;
+    color: rgba(250, 144, 33, 1);
+    transition: all 0.3s ease;
+}
+
+.c6-group:hover i{
+    padding-left: 20px;
+}
+
+.c6-row:nth-of-type(2){
+    width: 30%; 
+    margin-top: 50px;
+}
 
 /* container 7 */
 .container7{
@@ -316,14 +402,15 @@ body{
 /* container 8 */
 .container8{
     display: flex;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin: 150px 0px;
+    height: 500px;
 }
 
 .container8-content {
-    /* width: 100%; */
-    margin-left: 225px;
+    width: 85%;
 }
 
 #title8{
@@ -333,33 +420,45 @@ body{
 
 #text8{
     font-size: 15px;
-    width: 40%;
+    width: 45%;
     margin: 30px 0; 
 }
 
 .container8-input {
+    display: flex;
+    justify-content: space-between;
     background-color: rgba(28, 20, 15, 1);
-    padding: 30px 50px;
-    align-items: center;
+    padding: 20px 50px;
+    align-items: flex-start;
     border-radius: 10px;
-    max-height: 200px;
+    width: 85%;
 } 
 
 .container8-input p{
     font-size: 15px;
-    width: 70%;
-    height: 100px;
+    width: 80%;
+    height: auto;
     margin: 10px 0;
 } 
 
 .container8-input h3{
     font-weight: 500;
     font-style: normal;
+    width:40%;
 } 
+
+.input-group{
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 50%;
+}
 
 #input8{
     color: rgba(137, 137, 137, 1);
-    padding: 10px 100px 10px 20px;
+    margin: auto;
+    padding: 12px 20px;
+    width: 300px;
     border-radius: 5px;
     border: none;
 }
@@ -369,8 +468,16 @@ body{
     color: white;
     border: none;
     border-radius: 5px;
-    padding: 5px 20px;
-    margin-left: -100px;
+    padding: 8px 20px;
+    margin-left: -255px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#btn8:hover {
+    font-weight: bold;
+    background: linear-gradient(to right, rgba(250, 131, 5, 1), rgba(251, 158, 60, 1)); 
+    transform: scale(0.9);
 }
 
 /* footer */
@@ -379,6 +486,8 @@ body{
     padding: 70px 0 0 0;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 #logo-footer{
@@ -386,18 +495,18 @@ body{
     text-decoration: none;
     font-weight: bold;
     font-size: 30px;
-    margin-bottom: 40px;
 }
 
 .container9{
 	max-width: 1170px;
-    background-color: green;
 }
 
 .footer-top{
+    width: 100%;
 	display: flex;
 	flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: space-between;
     margin-bottom: 50px;
 }
 
@@ -409,7 +518,7 @@ body{
 }
 
 .content9:first-child{
-    width: 40%;
+    width: 35%;
 }
 
 .content9:nth-child(2){
@@ -418,11 +527,16 @@ body{
 
 .content9 p{
     font-size: 15px;
+    margin: 0;
 }
 
 .content9 h4{
 	font-size: 18px;
 	position: relative;
+}
+
+#text9{
+    width: 80%;
 }
 
 .content9 ul li:not(:last-child){
@@ -454,8 +568,7 @@ ul{
     justify-content: center;
     align-items: flex-end;
     height: 215px;
-	width: 250px;
-    background-color: purple;
+	width: 200px;
 }
 
 .social-links a{
@@ -484,10 +597,11 @@ ul{
 
 .footer-bottom {
     width: 100%;
+    height: 80px;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
-    background-color: red;
+    align-items: center;
+    border-top: 1px solid rgb(75, 74, 74);
 }
 
 .footer-bottom p{
