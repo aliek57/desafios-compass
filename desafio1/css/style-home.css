@@ -448,7 +448,7 @@ body{
     width: 50%;
 }
 
-#input8{
+#input-form{
     color: rgba(137, 137, 137, 1);
     margin: auto;
     padding: 12px 20px;
@@ -457,7 +457,7 @@ body{
     border: none;
 }
 
-#btn8{
+#btn-form{
     background: linear-gradient(to top, rgba(250, 131, 5, 1), rgba(251, 158, 60, 1));
     color: white;
     border: none;
@@ -468,7 +468,7 @@ body{
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-#btn8:hover {
+#btn-form:hover {
     font-weight: bold;
     background: linear-gradient(to right, rgba(250, 131, 5, 1), rgba(251, 158, 60, 1)); 
     transform: scale(0.9);

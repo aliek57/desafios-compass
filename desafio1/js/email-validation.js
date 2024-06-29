@@ -2,10 +2,10 @@ document.addEventListener('DOMContentLoaded', function() {
     
     let emailArr = JSON.parse(localStorage.getItem('emails')) || []
 
-    document.querySelector('#btn8').addEventListener('click', function(e) {
+    document.querySelector('#btn-form').addEventListener('click', function(e) {
         document.querySelector('.popup').style.display = 'block'
 
-        let email = document.getElementById('input8').value.trim()
+        let email = document.getElementById('input-form').value.trim()
         let title = document.getElementById('popup-title')
         let msg = document.getElementById('popup-message')
         const checkEmail = /\w+@\w+\.\w+/
