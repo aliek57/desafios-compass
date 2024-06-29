@@ -1,4 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
+    
+    let emailArr = JSON.parse(localStorage.getItem('emails')) || []
+
     document.querySelector('#btn8').addEventListener('click', function(e) {
         document.querySelector('.popup').style.display = 'block'
 
@@ -8,8 +11,11 @@ document.addEventListener('DOMContentLoaded', function() {
         const checkEmail = /\w+@\w+\.\w+/
 
         if(checkEmail.test(email)){
+            emailArr.push(email)
+            localStorage.setItem('emails', JSON.stringify(emailArr))
             title.textContent = 'Thank You!'
             msg.textContent = 'Your details has been successfully submitted.'
+            document.getElementById('input8').value = ""
         } else {
             title.textContent = 'Oops!'
             msg.textContent = 'The email you entered is not valid. Please try again.'
@@ -20,3 +26,4 @@ document.addEventListener('DOMContentLoaded', function() {
         document.querySelector('.popup').style.display = 'none'
     })
 })
+
