@@ -600,3 +600,45 @@ ul{
 .footer-bottom p{
     font-size: 14px;
 }
+
+.popup {
+    background-color: white;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    padding: 20px;
+    border-radius: 5px;
+    color: black;
+    text-align: center;
+    z-index: 999;
+}
+
+.popup h3 {
+    margin-top: 0;
+    font-weight: 600;
+}
+
+.popup p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+#close-popup {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(12, 148, 12);
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#close-popup:hover {
+    background-color: rgb(12, 184, 12);
+}
