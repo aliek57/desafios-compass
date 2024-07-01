@@ -11,6 +11,75 @@ body{
     color: white;
     font-size: 1.5em;
     overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.container1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    position: relative; 
+    z-index: 10; 
+    background-color: rgba(0, 0, 0, 0.829);
+}
+
+.menu-container{
+    display: flex;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu-items{
+    margin: 0 30px;
+    font-size: 15px;
+}
+
+.menu-items a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: font-size 0.3s ease, transform 0.3s ease;
+}
+
+.menu-items a:hover {
+    font-weight: bold;
+    font-size: 18px;
+    transform: scale(1.2);
+    color: rgb(126, 123, 123); 
+    text-shadow: 2px 2px 4px black;
+}
+
+#logo{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#menu-btn{
+    color: white;
+    margin-left: 20px;
+    border: none;
+    background-color: rgb(88, 88, 88);
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#menu-btn:hover {
+    border-radius: 10px;
+    background: rgba(87, 86, 85, 0.596);
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(102, 102, 101, 0.6);
 }
 
 .container{
@@ -47,9 +116,9 @@ body{
     margin-top: 50px;
     width: 200px;
     height: 50px;
-    border: none;
+    border: 2px solid black;
     border-radius: 10px;
-    background-color: rgb(76, 76, 141);
+    background-color: rgba(0, 0, 0, 0.733);
     color: white;
     font-size: 20px;
     cursor: pointer;
@@ -57,9 +126,10 @@ body{
 }
 
 .content button:hover {
-    background: rgba(112, 124, 150, 0.81);
+    border: none;
+    background: black;
     transform: scale(1.1);
-    box-shadow: 0 0 20px rgba(15, 26, 122, 0.6);
+    box-shadow: 0 0 20px rgba(30, 30, 31, 0.6);
 }
 
 #bg-video{
@@ -70,4 +140,39 @@ body{
     height: 100%;
     object-fit: cover;
     z-index: -1;
+}
+
+.container3{
+    width: 100%; 
+    bottom: 0;
+    padding: 20px; 
+    position: fixed;
+    z-index: 99; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links {
+    display: flex;
+    gap: 5px; 
+}
+
+.links a {
+    font-size: 15px;
+	height: 30px;
+	width: 30px;
+	background-color: white;
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 30px;
+	border-radius: 50%;
+	color: black;
+	transition: all 0.3s ease;
+}
+
+.links a:hover {
+    transform: scale(1.20);
+	color: white;
+	background-color: black;
 }
