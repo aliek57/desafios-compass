@@ -22,6 +22,7 @@ body{
     position: relative; 
     z-index: 10; 
     background-color: rgba(76, 50, 40, 0.1);
+    transition: opacity 1s ease-in-out;
 }
 
 .menu-container{
@@ -99,12 +100,15 @@ body{
 }
 
 .hidden{
-    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease-in-out, visibility 0s 1s;
 }
 
 .show{
-    display: block;
     opacity: 1;
+    visibility: visible;
+    transition: opacity 1s ease-in-out, visibility 0s;
 }
 
 .content h1{
@@ -150,6 +154,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: opacity 1s ease-in-out;
 }
 
 .links {
