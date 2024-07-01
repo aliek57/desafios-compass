@@ -105,13 +105,9 @@ body{
     margin: 20px 0;
 }
 
-.container2-top a{
-    text-decoration: none;
-    color: rgba(250, 144, 33, 1);
-}
-
-.container2-top a:hover{
+.container2-top span{
     text-decoration: underline;
+    color: rgba(250, 144, 33, 1);
 }
 
 .container2-images img{
@@ -215,6 +211,7 @@ body{
 
 .c3-text{
     text-align: center;
+    margin-top: 50px;
 }
 
 .c3-text h2{
@@ -273,6 +270,7 @@ body{
 
 .group-content{
     width: 100%;
+    margin: 10px 0;
 }
 
 .group-content input,
@@ -291,7 +289,35 @@ body{
     margin-top: 15px;
 }
 
-#message-input{
+.align-message{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.align-message p, .align-message .validate-message {
+    margin: 0; 
+}
+
+.group-name input.invalid{
+    border: 1px solid red !important;
+    background-color: rgba(233, 70, 70, 0.541) !important;
+}
+
+.group-content input.invalid,
+.group-content textarea.invalid{
+    border: 1px solid red !important;
+    background-color: rgba(233, 70, 70, 0.541) !important;
+}
+
+.validate-message{
+    color: rgb(159, 11, 11);
+    font-size: 10px;
+}
+
+#message-form{
     height: 150px;
 }
 
@@ -299,10 +325,10 @@ body{
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    margin: 10px 0;
+    margin: 30px 0;
 }
 
-#btn3{
+#btn-form{
     background-color: rgba(250, 144, 33, 1);
     color: white;
     font-size: 15px;
@@ -313,11 +339,19 @@ body{
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-#btn3:hover {
+#btn-form:hover {
     border-radius: 10px;
     background: linear-gradient(to right, rgba(250, 131, 5, 1), rgba(251, 158, 60, 1));
     transform: scale(1.05);
     box-shadow: 0 0 20px rgba(50, 58, 66, 0.6);
+}
+
+c3-form form-button button.desactive{
+    background-color: rgba(255, 255, 255, 0.07) !important;
+    border: 1px solid rgba(206, 206, 206, 1) !important;
+    border-radius: 5px !important;
+    font-size: 15px !important;
+    cursor: not-allowed !important;
 }
 
 .container4{
@@ -383,7 +417,7 @@ body{
     border: none;
 }
 
-#btn-form{
+#btn4{
     background: linear-gradient(to top, rgba(250, 131, 5, 1), rgba(251, 158, 60, 1));
     color: white;
     border: none;
@@ -527,7 +561,7 @@ ul{
     font-size: 14px;
 }
 
-.popup {
+.popup, .popup-form {
     background-color: white;
     display: none;
     position: fixed;
@@ -542,17 +576,17 @@ ul{
     z-index: 999;
 }
 
-.popup h3 {
+.popup h3, .popup-form h3 {
     margin-top: 0;
     font-weight: 600;
 }
 
-.popup p {
+.popup p, .popup-form p {
     margin-top: 10px;
     font-size: 18px;
 }
 
-#close-popup {
+#close-popup, #close-popup-form {
     margin-top: 20px;
     width: 100%;
     padding: 10px 20px;
@@ -565,6 +599,6 @@ ul{
     transition: background-color 0.3s ease;
 }
 
-#close-popup:hover {
+#close-popup:hover, #close-popup-form:hover {
     background-color: rgb(12, 184, 12);
 }

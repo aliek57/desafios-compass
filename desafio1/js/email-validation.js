@@ -1,14 +1,16 @@
 document.addEventListener('DOMContentLoaded', function() {
     
     let emailArr = JSON.parse(localStorage.getItem('emails')) || []
+    let email = document.getElementById('input-form').value.trim()
+    let title = document.getElementById('popup-title')
+    let msg = document.getElementById('popup-message')
+    let btn = document.getElementById('btn4')
+    let closeOk = document.getElementById('close-popup')
+    let popupBox = document.querySelector('.popup')
+    const checkEmail = /\w+@\w+\.\w+/
 
-    document.querySelector('#btn-form').addEventListener('click', function(e) {
-        document.querySelector('.popup').style.display = 'block'
-
-        let email = document.getElementById('input-form').value.trim()
-        let title = document.getElementById('popup-title')
-        let msg = document.getElementById('popup-message')
-        const checkEmail = /\w+@\w+\.\w+/
+    btn.addEventListener('click', function(e) {
+        popupBox.style.display = 'block'
 
         if(checkEmail.test(email)){
             emailArr.push(email)
@@ -22,8 +24,8 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     })
 
-    document.querySelector('#close-popup').addEventListener('click', function(e) {
-        document.querySelector('.popup').style.display = 'none'
+    closeOk.addEventListener('click', function(e) {
+        popupBox.style.display = 'none'
     })
 })
 

@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
-    <script src="https://kit.fontawesome.com/11884c519c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style-contact.css">
 </head>
 <body>
@@ -20,13 +19,13 @@
                 <li class="menu-items"><a href="error.html">News</a></li>
               </ul>
               <div>
-                <a href="error.html"><button id="menu-btn">Contact Us</button></a>
+                <a href="#container3"><button id="menu-btn">Contact Us</button></a>
               </div>
           </div>
     </header>
     <div class="container2">
         <div class="container2-top">
-            <p>Home > <a href="contact-us.html"> Contact Us</a></p>
+            <p>Home > <span>Contact Us</span></p>
             <h1>Lorem Ipsum is simply dummy text of the printing and.</h1>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
         </div>
@@ -63,26 +62,38 @@
                 <div class="c3-form">
                     <div class="form-name">
                         <div class="group-name">
-                            <p>First Name</p>
-                            <input type="text" name="" id="">
+                            <div class="align-message">
+                                <p>First Name</p>
+                                <span class="validate-message name-validation">*</span>
+                            </div>
+                            <input type="text" name="" id="first-name-form">
                         </div>
                         <div class="group-name">
-                            <p>Last Name</p>
-                            <input type="text" name="" id="">
+                            <div class="align-message">
+                                <p>Last Name</p>
+                                <span class="validate-message last-name-validation">*</span>
+                            </div>
+                            <input type="text" name="" id="last-name-form">
                         </div>
                     </div>
                     <div class="form-content"> 
                         <div class="group-content">
-                            <p>Email Address</p>
-                            <input type="text" name="" id="">
+                            <div class="align-message">
+                                <p>Email Address</p>
+                                <span id="email-form-validation" class="validate-message">*</span>
+                            </div>
+                            <input type="text" name="" id="email-form">
                         </div>
                         <div class="group-content">
-                            <p>Message</p>
-                            <textarea id="message-input"></textarea>
+                            <div class="align-message">
+                                <p>Message</p>
+                                <span id="msg-validation" class="validate-message">*</span>
+                            </div>
+                            <textarea id="message-form"></textarea>
                         </div>
                     </div>
                     <div class="form-button">
-                        <button id="btn3">Get in touch</button>
+                        <button id="btn-form">Get in touch</button>
                     </div>
                 </div>
             </div>
@@ -99,7 +110,7 @@
                 <p>Subscribe to receive the latest news and updates about TDA. We promise not to spam you!</p></div>
             <div class="input-group">
                 <input type="text" name="" id="input-form" value="Enter email address">
-                <button id="btn-form">Continue</button>
+                <button id="btn4">Continue</button>
             </div>
         </div>
     </div>
@@ -145,6 +156,13 @@
         <p id="popup-message"></p>
         <button id="close-popup"> OK </button>
     </div>
-   <script src="js/email-validation.js"></script>
+    <div class="popup-form">
+        <h3 id="popup-title-form"></h3>
+        <p id="popup-message-form"></p>
+        <button id="close-popup-form"> OK </button>
+    </div>
+    <script src="https://kit.fontawesome.com/11884c519c.js" crossorigin="anonymous"></script>
+    <script src="js/email-validation.js"></script>
+    <script src="js/form-validation.js"></script>
 </body>
 </html>
