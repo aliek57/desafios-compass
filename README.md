@@ -11,6 +11,42 @@ Esse projeto é um clone do protótipo do Figma enviado pela Compass. O objetivo
 - Validação de formulário
 - Armazenamento no LocalStorage
 
+Menu (página principal, página de contato, página de erro e página de sucesso): 
+Ao clicar no logo e no item Home volta para a página inicial, o botão Contact Us redireciona para a página de contato e os botões restantes redirecionam para a página de erro.
+
+Container2 da página principal:
+Botão "Get More Details" redireciona para página de erro
+
+Container 3 da página principal:
+Ao clicar nos botões ou nas imagens redireciona para a página de erro
+
+Container 6 da página principal:
+Ao clicar em qualquer elemento do c6-group (imagem, texto ou flecha) redireciona para a página de erro
+
+Container 7 da página principal:
+Botões e imagens enviam usuário para a página de erro
+
+Container 8 da página principal e Container 4 da página de contato:
+Validação do email inserido pelo usuário. Caso seja um email inválido ao clicar no botão aparece um PopUp de erro, caso contrário aparece um PopUp de sucesso e armazena o valor pelo LocalStorage
+
+Footer da página principal e página de contato: 
+O logo redireciona para a página principal, o Contact Us redireciona para a página de contato e os ícones das redes sociais vão para suas respectivas páginas (Facebook, X, Instagram e Linkedin). Todos os outros links do About Us redirecionam para a página de erro
+
+Menu da página de contato:
+O botão Contact Us redireciona para o formulário
+
+Container 2 da página de contato:
+Os ícones das redes sociais redirecionam o usuário para a página da rede social em questão (Facebook, Instagram, X e Linkedin)
+
+Container 3 (formulário):
+Faz a validação dos campos Name, Last Name, Email Address e Message. Se algum campo estiver vazio e o usuário tentar enviar aparece um PopUp solicitando que o usuário preencha todas as informações. O nome e último nome não podem conter números ou caracteres especiais (!@#$%&*), o email é validado com estrutura própria de email e a mensagem não pode conter menos que 10 caracteres. Se o usuário faltar com alguma dessas regras o campo fica vermelho, mostra uma mensagem e o botão fica inativo. Quando todas as informações estiverem corretas o usuário é redirecionado para a página de sucesso e as informações são armazenadas no LocalStorage
+
+Página de erro:
+Contém header, uma mensagem centralizada, botão que redireciona para a página principal e um footer. Todo o conteúdo do site aparece com uma transição suave após o carregamento do vídeo de fundo. Os links do footer redirecionam o usuário para a rede social desejada
+
+Página de sucesso: 
+Parecido com a página de erro mas a mensagem é diferente, resgata o nome e último nome do usuário armazenado pelo LocalStorage
+
 
 ## Aprendizados
 
