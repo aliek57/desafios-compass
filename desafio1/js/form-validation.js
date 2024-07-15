@@ -89,15 +89,12 @@ document.addEventListener('DOMContentLoaded', function() {
         if (firstName.value.trim() == "" || lastName.value.trim() == "" ||
             emailForm.value.trim() == "" || msg.value.trim() == "") {
             btn.classList.add('desactive')
-            btn.disabled = true
             popUp()
         }else if(firstName.classList.contains('invalid') || lastName.classList.contains('invalid') ||
                  emailForm.classList.contains('invalid') || msg.classList.contains('invalid')){
-            btn.disabled = true
             btn.classList.add('desactive')
             popUp()
         }else {
-            btn.disabled = false
             btn.classList.remove('desactive')
             nameArr.push(firstName.value.trim())
             lastnameArr.push(lastName.value.trim())

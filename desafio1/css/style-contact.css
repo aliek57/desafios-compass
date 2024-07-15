@@ -417,7 +417,7 @@ c3-form form-button button.desactive{
     border: none;
 }
 
-#btn4{
+#btn{
     background: linear-gradient(to top, rgba(250, 131, 5, 1), rgba(251, 158, 60, 1));
     color: white;
     border: none;
@@ -428,7 +428,7 @@ c3-form form-button button.desactive{
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-#btn-form:hover {
+#btn:hover {
     font-weight: bold;
     background: linear-gradient(to right, rgba(250, 131, 5, 1), rgba(251, 158, 60, 1)); 
     transform: scale(0.9);
