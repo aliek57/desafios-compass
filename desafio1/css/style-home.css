@@ -1,27 +1,64 @@
 .container1{
-    display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 20px;
     position: relative; 
     z-index: 10; 
 }
 
-.menu-container{
-    display: flex;
-    align-items: center;
+/* adapting */
+.menu, .menu-container, .footer, .container1 {
+  display: flex;
+  align-items: center;
 }
 
-.menu{
-    display: flex;
-    margin: 0;
-    padding: 0;
-    list-style: none;
+.menu, .footer-top {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
+
+.menu-items, .content5 ul li a {
+  font-size: 15px;
+}
+
+.menu-items a, .content5 ul li a {
+  color: var(--white);
+  text-decoration: none;
+  padding: 5px 10px;
+  transition: font-size 0.3s, transform 0.3s;
+}
+
+.menu-items a:hover, .content5 ul li a:hover {
+  font-weight: bold;
+  font-size: 18px;
+  transform: scale(1.2);
+  color: rgb(141, 141, 236);
+  text-shadow: 2px 2px 4px black;
+}
+
+#menu-btn, #btn-form, #btn4, #close-popup, #close-popup-form {
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+#menu-btn, #btn-form {
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+#menu-btn:hover, #btn-form:hover {
+  border-radius: 10px;
+  background: linear-gradient(to right, var(--orange-dark), var(--orange-light));
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 115, 230, 0.6);
+}
+/* ending adapting */
 
 .menu-items{
     margin: 0 30px;
-    font-size: 15px;
 }
 
 .menu-items a {
@@ -470,10 +507,8 @@
 .footer{
 	background-color: black;
     padding: 70px 0 0 0;
-    display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: center;
 }
 
 #logo-footer{
